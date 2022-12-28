@@ -1,12 +1,11 @@
+'use strict';
 
 const express = require('express');
-
 const puppeteer = require('puppeteer');
+
 const app = express();
 
-
 app.use(express.json());
-
 
 // Faz o scrapping no tradutor do google.
 app.get('/translate', async (req, res) => {
